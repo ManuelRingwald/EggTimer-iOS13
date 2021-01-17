@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     
-    let eggTimes = ["Soft": 300, "Medium": 420, "Hard": 720]
+    let eggTimes = ["Soft": 3, "Medium": 42, "Hard": 72]
     var player: AVAudioPlayer?
     
     var counter = 0
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
     
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "alarm_sound3", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
