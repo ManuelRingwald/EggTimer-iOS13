@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
     
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "speech075", withExtension: "wav") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
